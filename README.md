@@ -2,7 +2,7 @@
 
 A simple sign-up form created with HTML, CSS and JavaScript. 
 
- Live Demo 👉 *[Calculator](http://joycehwchan.github.io/SignupForm/)*
+ Live Demo 👉 *[Sign-up Form](http://joycehwchan.github.io/SignupForm/)*
 
 ### What I learned
 * Create HTML forms
