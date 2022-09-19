@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Formt</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"  />
+    
+    <script src="https://kit.fontawesome.com/7d9e28e2cd.js" crossorigin="anonymous" ></script>
+
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <main>
+        <div class="sidebar">
+            <div class="header">
+                <h1>Sign-up Form</h1>
+            </div>
+            <div class="credit">
+                Photo by <a href="https://unsplash.com/@yoavaziz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yoav Aziz</a> on <a href="https://unsplash.com/s/photos/japan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+            <div class="footer">
+                <span>Made By: </span>
+                <a href="https://github.com/joycehwchan" id="github" target="_blank">
+                  joycehwchan
+                  <i class="fa-brands fa-github fa-1.5x"></i>
+                </a>
+            </div>
+        </div>
+        <div class="rightside">
+            <div class="toptext">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+                <p>Check out all the different types of input!</p> 
+            </div>
+
+            <!-- FORM BEGINS HERE -->
+            <form id="form" action="#" method="GET" enctype="multipart/form-data">
+                <!-- Basic Stuff -->
+                <div class="formsection">
+                    <div class ="formtitle">
+                        <h3>Basic stuff</h3>
+                    </div>
+                    <div class="formrow">
+                        <div class="formelement left">
+                            <label for="first_name">First name</label>
+                            <input type="text" name="first_name" id="first_name" placeholder="Tarou" minlength="2" maxlength="24" required>
+                        </div>
+                        <div class="formelement">
+                            <label for="last_name">Last name</label>
+                            <input type="text" name="last_name" id="last_name" placeholder="Tanaka" minlength="2" maxlength="24" required>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formelement left">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="tanakatarou@sakura.com" required>
+                        </div>
+                        <div class="formelement">
+                            <label for="phone">Phone Numbner</label>
+                            <input type="tel" name="phone" id="phone" pattern="([0-9]{3} [0-9]{4} [0-9]{4})|([0-9]{11})" placeholder="090 9999 9999" >
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formelement left">
+                            <label for="age">Age</label>
+                            <input type="number" name="age" id="age"  min="1" min="120">
+                        </div>
+                        <div class="formelement">
+                            <label for="birth_date">Birthdate</label>
+                            <input type="date" name="birth_date" id="birth_date"  min="1900-01-01">
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formelement left">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required minlength="8" maxlength="20">
+                        </div>
+                        <div class="formelement">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" name="confirm_password" id="confirm_password" required minlength="8" maxlength="20">
+                        </div>
+                    </div>
+                    <div id="error"></div>
+                    <div id="success"></div>
+                </div>
+
+                 <!-- Buttons -->
+                 <div class="buttonrow">
+                    <button type="reset">Reset</button>
+                    <button type="submit" id="submit_button">Submit</button>
+                </div>
+
+                 <!-- Login -->
+                 <div class="login">
+                    <small>
+                        Already have an account? 
+                    <a href="#">Log in</a>
+                    </small>
+                </div>
+                
+                <p class="toptext">More types of input:</p>
+
+                <!-- Extra Stuff -->
+                <div class="formsection">
+                    
+                    <div class ="formtitle">
+                        <h3>Extra stuff</h3>
+                    </div>
+
+                    <div class="formrow">
+                        <div class="formelement">
+                            <p>Gender</p>
+                            <div class="radiorow">
+                                <div class="radioelement">
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="male" value="male">
+                                </div>
+                                <div class="radioelement">
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="gender" id="female" value="female">
+                                </div>
+                                <div class="radioelement">
+                                    <label for="transgender">Transgender</label>
+                                    <input type="radio" name="gender" id="transgender" value="transgender">
+                                </div>
+                                <div class="radioelement">
+                                    <label for="nonbinary">Non-binary</label>
+                                    <input type="radio" name="gender" id="nonbinary" value="nonbinary">
+                                </div>
+                                <div class="radioelement">
+                                    <label for="notrespond">Prefer not to respond</label>
+                                    <input type="radio" name="gender" id="notrespond" value="notrespond">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="formrow">
+                        <div class="formelement">
+                            <p>Checkbox stuff</p>
+                            <div class="checkrow">
+                                <div class="checkelement">
+                                    <label for="check1">Item 1</label>
+                                    <input type="checkbox" name="check1" id="check1">
+                                </div>
+                                <div class="checkelement">
+                                    <label for="check2">Item 2</label>
+                                    <input type="checkbox" name="check2" id="check2">
+                                </div>
+                                <div class="checkelement">
+                                    <label for="check3">Item 3</label>
+                                    <input type="checkbox" name="check3" id="check3">
+                                </div>
+                                <div class="checkelement">
+                                    <label for="check4">Item 4</label>
+                                    <input type="checkbox" name="check4" id="check4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="formrow">
+                        <div class="formelement">
+                            <p>Select stuff</p>
+                            <div class="selectrow">
+                                <div class="selectelement">
+                                    <label for="select1">Choose stuff</label>
+                                    <select name="select1" id="select1">
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                        <option value="option4">Option 4</option>
+                                        <option value="option5" label="Option 5"></option>
+                                    </select>
+                                </div>
+                                <div class="selectelement">
+                                    <label for="select2">Choose more stuff</label>
+                                    <select name="select2" id="select2">
+                                        <option value="optionA">Option A</option>
+                                        <option value="optionB">Option B</option>
+                                        <option value="optionC">Option C</option>
+                                        <option value="optionD">Option D</option>
+                                        <option value="optionE" label="Option E"></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Extra Stuff -->
+                <div class="formsection">
+
+                    <div class ="formtitle">
+                        <h3>Final stuff</h3>
+                    </div>
+
+                    <div class="formrow">
+                        <div class="formelement">
+                            <label for="bio">Personal Bio</label>
+                            <textarea name="bio" id="bio" cols="50" rows="10" placeholder="Tell us about yourself!"></textarea>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formelement">
+                            <label for="url">Website</label>
+                            <input type="url" name="url" id="url">
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formelement">
+                            <!-- <label for="file">Upload your file</label> -->
+                            <p>Upload your file</p>
+                            <input type="file" name="file" id="file">
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
