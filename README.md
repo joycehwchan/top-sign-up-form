@@ -1,6 +1,7 @@
 # Sign-up Form
 
-A simple sign-up form created with HTML, CSS and JavaScript. 
+A simple sign-up form created with HTML, CSS and JavaScript.<br>
+Project for the Odin Project.
 
 ### What I learned
 * Create HTML forms
